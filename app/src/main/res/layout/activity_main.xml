@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mDrawerLayout"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbarMain"
+            layout="@layout/toolbar_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/toolbarcolor" />
+
+            <FrameLayout
+                android:id="@+id/llFrm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/llBot" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/llBot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:background="@color/linecolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp" />
+
+                <com.roughike.bottombar.BottomBar
+                    android:id="@+id/bottomBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentBottom="true"
+                    app:bb_activeTabAlpha="1"
+                    app:bb_inActiveTabAlpha="0.6"
+                    app:bb_tabXmlResource="@xml/bottombar_tabs"
+                    app:bb_titleTypeFace="regular.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/llBottomMulti"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/llDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:padding="@dimen/_4sdp"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/ic_bottom_delete"
+                        app:tint="@color/font1" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/font1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delete"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/llMerge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/Ivmerge"
+                        android:padding="@dimen/_4sdp"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/merger"
+                        app:tint="@color/font1" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/font1"
+                        android:id="@+id/merge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merge"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/llShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:padding="@dimen/_4sdp"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/ic_bottom_share"
+                        app:tint="@color/font1" />
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/font1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</layout>

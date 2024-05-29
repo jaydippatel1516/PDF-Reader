@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/rootlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="@color/font1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sort by"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/llNameAsc"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:padding="@dimen/_3sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_name_asc" />
+
+                <TextView
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:text="Name Ascending"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/sort1"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/sort_checked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/llNameDesc"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:padding="@dimen/_3sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_name_desc" />
+
+                <TextView
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:text="Name Descending"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/sort2"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/sort_checked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/llDateAsc"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:padding="@dimen/_3sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_date_asc" />
+
+                <TextView
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:text="Date Ascending"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/sort3"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/sort_checked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/llDateDesc"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:padding="@dimen/_3sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_date_desc" />
+
+                <TextView
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:text="Date Descending"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/sort4"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/sort_checked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/llSizeAsc"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:padding="@dimen/_3sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_size_asc" />
+
+                <TextView
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:text="Size Ascending"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/sort5"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/sort_checked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/llSizeDesc"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:padding="@dimen/_3sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_size_desc" />
+
+                <TextView
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:text="Size Descending"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/sort6"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/sort_checked" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/bottom"
+                layout="@layout/dialog_bottom" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>

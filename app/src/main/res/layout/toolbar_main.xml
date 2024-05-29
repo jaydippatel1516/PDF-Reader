@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/cardDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/drawerIcon"
+                    android:visibility="invisible"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_three_dot_drawer" />
+            </LinearLayout>
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PDF Reader"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/cardDrawer"
+                android:layout_centerVertical="true"
+                 />
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:id="@+id/txtCount"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/imgSelectAll"
+                android:padding="@dimen/_8sdp"
+                android:visibility="gone"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/select_all"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+</LinearLayout>
+</layout>

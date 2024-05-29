@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:elevation="0dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/rootlayout"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/icon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/pdf" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="1">
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/font1"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:id="@+id/title"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:includeFontPadding="false"
+                 />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp">
+
+                <TextView
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/subtextcolor"
+                    android:id="@+id/size"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:includeFontPadding="false"
+                     />
+
+                <TextView
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/subtextcolor"
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fav"
+            android:visibility="gone"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_fav" />
+
+        <FrameLayout
+            android:id="@+id/info"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="right|center_vertical|center_horizontal|center"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_43sdp"
+                android:src="@drawable/menu" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrmCheckbox"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:layout_gravity="center_vertical"
+                android:id="@+id/check"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/_1sdp"
+                android:clickable="false"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_43sdp"
+                android:button="@null"
+                android:src="@drawable/menu"
+                android:drawableStart="@drawable/checkbox_selector" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>

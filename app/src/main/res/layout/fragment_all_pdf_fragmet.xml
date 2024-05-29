@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/centerlayout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/no_data" />
+
+        <TextView
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/font1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/nopdfavailable"
+             />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbarSize="@dimen/_10sdp"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        android:id="@+id/pdfview"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true" />
+</RelativeLayout>
+</layout>

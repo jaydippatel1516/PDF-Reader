@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="@dimen/_1sdp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/categoryImage"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/llPage"
+            android:background="@drawable/corner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:id="@+id/pageNo"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_12sdp"
+                android:text="1"
+                 />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+</layout>

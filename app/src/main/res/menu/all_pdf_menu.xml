@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_sorting"
+        android:id="@+id/action_sort"
+        android:title="@string/share"
+        app:showAsAction="always" />
+    <item
+        android:theme="@style/WhiteCursorSearchView"
+        android:icon="@drawable/ic_magnifier"
+        android:id="@+id/menu_search"
+        android:title=""
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="never|always|collapseActionView" />
+    <item
+        android:icon="@drawable/ic_selectionmode"
+        android:id="@+id/action_selection"
+        android:title="@string/share"
+        app:showAsAction="always" />
+</menu>

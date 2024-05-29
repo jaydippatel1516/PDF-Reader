@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="color_array">
+        <item>BLACK</item>
+        <item>GRAY</item>
+        <item>YELLOW</item>
+        <item>BLUE</item>
+        <item>GREEN</item>
+        <item>ORANGE</item>
+        <item>PINK</item>
+        <item>RED</item>
+        <item>WHITE</item>
+    </array>
+    <array name="fontfamily_array">
+        <item>TIMES_ROMAN</item>
+        <item>COURIER</item>
+        <item>HELVETICA</item>
+        <item>SYMBOL</item>
+    </array>
+    <array name="fontstyle_array">
+        <item>NORMAL</item>
+        <item>BOLD</item>
+        <item>BOLDITALIC</item>
+        <item>ITALIC</item>
+        <item>STRIKETHRU</item>
+    </array>
+</resources>
